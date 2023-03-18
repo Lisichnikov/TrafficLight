@@ -1,52 +1,54 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativelayout"
+    android:id="@+id/linearlayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="82dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="76dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="60dp"
         android:text="Йоу чел че как, светофор типо"
+        android:textColor="@color/black"
         android:textSize="20dp"
         tools:context=".MainActivity" />
 
     <Button
         android:id="@+id/buttonRed"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="198dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/oval_button"
         android:onClick="buttonRed_Click"
-        android:text="Красный"/>
+        android:text="Красный"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/buttonYellow"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonRed"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="72dp"
-        android:layout_marginTop="84dp"
-        android:text="Желтый"/>
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/oval_button1"
+        android:onClick="buttonYellow_Click"
+        android:text="Желтый"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/buttonGreen"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonYellow"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="74dp"
-        android:layout_marginTop="118dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/oval_button2"
         android:onClick="buttonGreen_Click"
-        android:text="Зеленый"/>
+        android:text="Зеленый"
+        android:textColor="@color/white" />
 
-</RelativeLayout>
+</LinearLayout>
